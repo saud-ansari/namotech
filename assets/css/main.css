@@ -6154,6 +6154,7 @@ html.lenis body {
 .rs-header-three .rs-header-inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 99;
 }
@@ -6180,7 +6181,7 @@ html.lenis body {
   width: 360px;
   height: 135px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 /* 
@@ -6217,9 +6218,9 @@ html.lenis body {
     width: 265px;
   }
 }
-.rs-header-three .rs-header-menu {
+/* .rs-header-three .rs-header-menu {
   margin-inline-end: auto;
-}
+} */
 
 .rs-header-three .rs-header-right {
   display: flex;
@@ -7370,7 +7371,7 @@ html.lenis body {
 /*  3.5.8 Header Common Style 
 /*----------------------------------------*/
 .rs-header-logo img {
-  max-width: 180px;
+  max-width: 100px;
 }
 .rs-header-search-wrapper {
   position: relative;
