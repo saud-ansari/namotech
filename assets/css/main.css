@@ -6162,28 +6162,33 @@ html.lenis body {
   position: relative;
   z-index: 1;
 }
-.rs-header-three .rs-header-left {
+/* .rs-header-three .rs-header-left {
   margin-top: -50px;
   margin-inline-start: -90px;
-}
+} */
 @media only screen and (max-width: 1199px) {
+  .rs-header-three .rs-header-logo{
+    top: 12px;
+  }
   .rs-header-three .rs-header-left {
-    margin-top: 0px;
-    margin-inline-start: -60px;
+    margin-inline-start: 0px;
   }
 }
 @media only screen and (max-width: 480px) {
+  .rs-header-three .rs-header-logo{
+    top: 12px;
+  }
   .rs-header-three .rs-header-left {
-    margin-inline-start: -47px;
+    margin-inline-start: 0px;
   }
 }
-.rs-header-three .rs-header-logo-wrapper {
+/* .rs-header-three .rs-header-logo-wrapper {
   width: 360px;
   height: 135px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-}
+} */
 /* 
 .rs-header-three .rs-header-logo-wrapper::before {
   background-color: var(--rs-theme-orange);
@@ -6249,9 +6254,9 @@ html.lenis body {
   margin-inline-start: 0px;
   margin-top: 0;
 }
-.rs-header-three .rs-sticky-header .rs-header-logo-wrapper {
+/* .rs-header-three .rs-sticky-header .rs-header-logo-wrapper {
   height: 100px;
-}
+} */
 @media only screen and (max-width: 1600px) {
   .rs-header-three .rs-sticky-header .rs-header-logo-wrapper {
     width: 300px;
@@ -7371,7 +7376,7 @@ html.lenis body {
 /*  3.5.8 Header Common Style 
 /*----------------------------------------*/
 .rs-header-logo img {
-  max-width: 100px;
+  width: 250px;
 }
 .rs-header-search-wrapper {
   position: relative;
@@ -10547,7 +10552,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 1600px) {
   .rs-header-area.has-bg-black .rs-sticky-header {
-    padding-inline-end: 60px;
+    padding: 0px 15px;
   }
 }
 @media only screen and (max-width: 1199px) {
