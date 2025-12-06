@@ -169,33 +169,33 @@ Sidebar Toggle
 
    
     // tooltip
-    document.addEventListener("DOMContentLoaded", function() {
-        var tooltipTriggers = document.querySelectorAll(".rs-portfolio-tooltip .rs-portfolio-tooltip-item");
-        tooltipTriggers.forEach(function(element) {
-            element.addEventListener("mousemove", myFunction);
-        });
-        function myFunction(e) {
-            var x = e.clientX;
-            var y = e.clientY;
-            var tooltipTrigger = e.currentTarget;
-            var tooltip = tooltipTrigger.querySelector(".rs-portfolio-tooltip .rs-portfolio-tooltip-content");
-            var triggerRect = tooltipTrigger.getBoundingClientRect();
-            var offsetX = x - triggerRect.left;
-            var offsetY = y - triggerRect.top;
-            var tooltipRect = tooltip.getBoundingClientRect();
-            var triggerWidth = triggerRect.width;
-            var triggerHeight = triggerRect.height;
-            var tooltipWidth = tooltipRect.width;
-            var tooltipHeight = tooltipRect.height;
-            var buffer = 200;
-            var maxX = triggerWidth - tooltipWidth + buffer;
-            var maxY = triggerHeight - tooltipHeight + buffer;
-            var left = Math.min(Math.max(x - triggerRect.left - tooltipWidth / 2, -buffer), maxX);
-            var top = Math.min(Math.max(y - triggerRect.top - tooltipHeight / 2, -buffer), maxY);
-            tooltip.style.left = left + "px";
-            tooltip.style.top = top + "px";
-        }
-    });
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     var tooltipTriggers = document.querySelectorAll(".rs-portfolio-tooltip .rs-portfolio-tooltip-item");
+    //     tooltipTriggers.forEach(function(element) {
+    //         element.addEventListener("mousemove", myFunction);
+    //     });
+    //     function myFunction(e) {
+    //         var x = e.clientX;
+    //         var y = e.clientY;
+    //         var tooltipTrigger = e.currentTarget;
+    //         var tooltip = tooltipTrigger.querySelector(".rs-portfolio-tooltip .rs-portfolio-tooltip-content");
+    //         var triggerRect = tooltipTrigger.getBoundingClientRect();
+    //         var offsetX = x - triggerRect.left;
+    //         var offsetY = y - triggerRect.top;
+    //         var tooltipRect = tooltip.getBoundingClientRect();
+    //         var triggerWidth = triggerRect.width;
+    //         var triggerHeight = triggerRect.height;
+    //         var tooltipWidth = tooltipRect.width;
+    //         var tooltipHeight = tooltipRect.height;
+    //         var buffer = 200;
+    //         var maxX = triggerWidth - tooltipWidth + buffer;
+    //         var maxY = triggerHeight - tooltipHeight + buffer;
+    //         var left = Math.min(Math.max(x - triggerRect.left - tooltipWidth / 2, -buffer), maxX);
+    //         var top = Math.min(Math.max(y - triggerRect.top - tooltipHeight / 2, -buffer), maxY);
+    //         tooltip.style.left = left + "px";
+    //         tooltip.style.top = top + "px";
+    //     }
+    // });
 
     $(document).ready(function () {
         // button style
